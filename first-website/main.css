@@ -1,0 +1,56 @@
+body{
+    background-color:cornflowerblue;
+    font-size:30px;
+}
+
+/*can use html and body almost interchangeably
+changing the background color would work just as well with body
+
+rgb values(red, green, blue)
+background color: rgb(0, 0, 0);
+rgb max is 255
+
+hex
+background color: #fedfdsafhs;
+
+*/
+
+p {
+    background-color:bisque; 
+    color:cornflowerblue;
+    border: dashed 5px aliceblue;
+    text-align:center;
+    padding: 20px 60px 80px 100px;
+    margin: 50px;
+
+    /*
+    for padding, 1 value is all sides, 2 values is first being top/bottom, second being left/right
+    width can affect flexibility of site
+    */
+}
+
+
+h1{
+    font-size:30px;
+    /*font-size:60px;*/
+}
+
+.special {
+    background-color:darkslategrey;
+    color: brown; 
+    border-radius: 45px;
+}
+
+/*
+special rules take precedence
+even if it's placed above the original settings
+it would take precedence because of hierarchy
+
+if it's an id you use # 
+if it's a class you use .
+*/
+
+.centered-text{
+    text-align:center;
+    padding:20px;
+}
