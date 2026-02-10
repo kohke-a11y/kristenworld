@@ -1,3 +1,10 @@
-p{
+body{
     color:antiquewhite;
+}
+    p{
+    color:blanchedalmond;
+}
+
+h1{
+    font-size: 600px;
 }
