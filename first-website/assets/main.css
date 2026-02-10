@@ -1,7 +1,10 @@
 body{
     background-color:cornflowerblue;
     font-size:30px;
+    font-family: sans-serif;
 }
+
+
 
 /*can use html and body almost interchangeably
 changing the background color would work just as well with body
@@ -22,6 +25,8 @@ p {
     text-align:center;
     padding: 20px 60px 80px 100px;
     margin: 50px;
+    font-family: "Playwrite NZ Basic Guides", cursive;
+
 
     /*
     for padding, 1 value is all sides, 2 values is first being top/bottom, second being left/right

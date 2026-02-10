@@ -1,0 +1,23 @@
+body{
+    background-color:antiquewhite;
+}
+
+p{
+    background-color:beige;
+}
+
+ul{
+    border: 10px dotted coral;
+    background-color:cadetblue;
+    color:blanchedalmond;
+    align-content: center;
+}
+
+.container{
+    position: relative;
+}
+
+.image2{
+    position:absolute;
+    left:-100px;
+}
