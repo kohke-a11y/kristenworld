@@ -41,8 +41,8 @@ h1{
 }
 
 .special {
-    background-color:darkslategrey;
-    color: brown; 
+    background-color:rgb(195, 232, 214);
+    color: rgba(128, 60, 60, 0.474); 
     border-radius: 45px;
 }
 

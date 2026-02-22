@@ -7,10 +7,11 @@ p{
 }
 
 ul{
-    border: 10px dotted coral;
-    background-color:cadetblue;
+    border: 10px dashed rgb(102, 133, 131);
+    background-color:rgb(166, 197, 196);
     color:blanchedalmond;
     align-content: center;
+    padding-top: 20px;
 }
 
 .container{

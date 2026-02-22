@@ -1,0 +1,16 @@
+body{
+    color:antiquewhite;
+    background-color: darkolivegreen;
+}
+    p{
+    color:blanchedalmond;
+}
+
+h1{
+    font-size: 500px;
+}
+
+img{
+    z-index:-1;
+    width:100%;
+}

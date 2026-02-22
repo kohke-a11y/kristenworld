@@ -1,0 +1,184 @@
+* {
+    box-sizing:border-box;
+}
+
+body {
+    background-color: lavenderblush;
+}
+
+.content-box {
+    background-color: aliceblue;
+    width:200px;
+    height:200px;
+    padding:50px;
+    border:5px solid darkolivegreen;
+    margin:20px;
+    box-sizing:content-box;
+}
+
+.border-box {
+    background-color: aliceblue;
+    width:200px;
+    height:200px;
+    padding:50px;
+    border:5px solid darkolivegreen;
+    margin:20px;
+    box-sizing:border-box;
+}
+
+
+.box {
+    background-color: honeydew;
+    width:100px;
+    height:100px;
+    border: 2px solid darkolivegreen;
+    padding:10px;
+    margin: 20px 0;
+}
+
+.relative {
+    background-color:cornflowerblue;
+    position: relative;
+    top:50px;
+    left:50px;
+}
+
+.fixed {
+    background-color:darkseagreen;
+    position:fixed;
+    top:20px;
+    right:20px;
+    margin:0;
+}
+
+
+.container {
+    background-color:rgb(108, 132, 132);
+    width:300px;
+    height:300px;
+    position:relative;
+}
+
+.absolute {
+    background-color:rgb(113, 172, 230);
+    position: absolute;
+    top: 10px;
+    right: -100px;
+    margin:0;
+}
+
+.instruction {
+    background-color: rgb(244, 87, 87);
+    color:rgb(255, 255, 255); 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.hint {
+    background-color: rgb(244, 87, 87);
+    color:rgb(255, 255, 255); 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+}
+
+.iris {
+    background-color:rgb(255, 255, 255); 
+    border-radius: 50%;
+    position: fixed;
+    top: 200px;
+    left: 200px;
+    width:100px;
+    height:130px;
+
+}
+
+.pupil {
+    background-color:rgb(54, 35, 7);
+    border-radius: 50%;
+    position: fixed;
+    top: 210px;
+    left: 210px;
+    width:60px;
+    height:60px;
+
+}
+
+
+.iris2 {
+    background-color:rgb(255, 255, 255); 
+    border-radius: 50%;
+    position: fixed;
+    top: 200px;
+    right: 200px;
+    width:100px;
+    height:130px;
+
+}
+
+.pupil2 {
+    background-color:rgb(54, 35, 7);
+    border-radius: 50%;
+    position: fixed;
+    top: 210px;
+    right: 210px;
+    width:60px;
+    height:60px;
+
+}
+
+
+.tooth {
+    background-color:rgb(255, 255, 255);
+    position: fixed;
+    top:380px;
+    right: 200px;
+    width:40px;
+    height:40px;
+}
+
+.tooth2 {
+    background-color:rgb(255, 255, 255);
+    position: fixed;
+    top:380px;
+    right: 250px;
+    width:40px;
+    height:40px;
+}
+
+.tooth3 {
+    background-color:rgb(255, 255, 255);
+    position: fixed;
+    top:380px;
+    right: 300px;
+    width:40px;
+    height:40px;
+}
+
+.tooth4 {
+    background-color:rgb(255, 255, 255);
+    position: fixed;
+    top:380px;
+    right: 350px;
+    width:40px;
+    height:40px;
+}
+
+.tooth5 {
+    background-color:rgb(255, 255, 255);
+    position: fixed;
+    top:380px;
+    right: 400px;
+    width:40px;
+    height:40px;
+}
+
+.tooth6 {
+    background-color:rgb(255, 255, 255);
+    position: fixed;
+    top:380px;
+    right: 450px;
+    width:40px;
+    height:40px;
+}
