@@ -67,6 +67,12 @@ body {
     margin:0;
 }
 
+.sticky{
+    background-color: coral;
+    position:sticky;
+    bottom:0;
+}
+
 .instruction {
     background-color: rgb(244, 87, 87);
     color:rgb(255, 255, 255); 

@@ -1,0 +1,75 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+.container{
+    background-color:rgb(179, 239, 179);
+    padding:10px;
+    display:flex;
+    flex-direction:column;
+    height: 100vh;
+    gap:10px;
+
+    /* flex-direction establishes main axis, the default is horizonatal, row is default */
+
+    /* flex-flow is just direction and wrap in one so these two could just be     flex-flow: row wrap;
+  */
+    /* aligns along main axis:default here is horizontal. and then we have 2 cross-axis alignments */
+
+    /* align items, defines how flex items are laid out on the cross-axis (vertical here) meant for non-wrapping items */
+    
+    /* align-content can be used for cross-axis wrapping items */
+
+    /* gap better than margin */
+
+}
+
+.top{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    height:20%;
+    gap:10px;
+}
+.top-item{
+    background-color:coral;
+    width:100%;
+    height:100%;
+}
+
+.bottom{
+    display:flex;
+    height:80%;
+    gap:10px;
+}
+.left{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: green;
+    width:50%;
+    height:100%;
+}
+
+.left-item{
+    background-color: rgb(255, 239, 120);
+    width:20%;
+    height:20%;
+}
+
+.right{
+    display:flex;
+    flex-direction:column;
+    width:50%;
+    height:100%;
+    gap:10px;
+}
+
+.right-item{
+    height:100%;
+    background-color: rgb(197, 220, 197);
+}

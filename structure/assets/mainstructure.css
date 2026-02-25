@@ -1,0 +1,135 @@
+body{
+    color:antiquewhite;
+    background-color: rgb(234, 233, 194);
+}
+
+p{
+    background-color: cornflowerblue;
+    font-family: "Tilt Neon", sans-serif;
+    font-optical-sizing: auto;
+    font-size:20px;
+    display:inline;
+    padding:10px;
+    position:fixed;
+    top:400px;
+    left:725px;
+    text-align:center;    
+}
+
+  
+.container {
+    background-color:cornflowerblue;
+    border:8px solid;
+    border-color: black;
+    display:flex;
+    height:250px;
+    width: 1450px;
+    position: relative;
+    top:50px;
+    z-index:-3;
+
+    flex-direction:row;
+    /* flex-direction establishes main axis, the default is horizonatal, row is default */
+
+    flex-wrap:wrap;
+
+    /* flex-flow is just direction and wrap in one so these two could just be     flex-flow: row wrap;
+  */
+    
+    justify-content:space-between;
+    /* aligns along main axis:default here is horizontal. and then we have 2 cross-axis alignments */
+
+    /* align items, defines how flex items are laid out on the cross-axis (vertical here) meant for non-wrapping items */
+    align-items: flex-end;
+    
+    /* align-content can be used for cross-axis wrapping items */
+    align-content:center;
+
+    gap:20px;
+    /* gap better than margin */
+
+}
+/* 
+.top{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    height:20%;
+    gap:10px;
+}
+
+.top-left{
+    background-color:cornflowerblue;
+    border:8px solid;
+    border-color: black;
+    width:100%;
+    height:100%;
+
+}
+
+.top-right{
+    background-color:cornflowerblue;
+    border:8px solid;
+    border-color: black;
+    width:100%;
+    height:100%;
+
+}
+ */
+
+.tree{
+    background-color:rgb(43, 63, 13);
+    border:2px solid;
+    border-color:rgb(147, 209, 135); 
+    width:150px;
+    height:200px;
+    z-index:-2;
+}
+.item {
+    background-color:gray;
+    border:3px solid;
+    border-color: black;
+    width:1450px;
+    height:2px;
+    z-index:-1;
+    position:absolute;
+    top:150px;
+}
+
+img{
+    position:fixed;
+    right:500px;
+    top:70px;
+    width:180px;
+    height:180px;
+    z-index:1;
+}
+
+.acorn1{
+    height:20px;
+    width:20px; 
+    position:fixed;
+    left:30px;
+    top:180px
+}
+
+
+.acorn2{
+    height:20px;
+    width:20px; 
+    position:fixed;
+    left:50px;
+    top:250px;
+
+}
+
+
+.acorn3{
+    height:20px;
+    width:20px; 
+    position:fixed;
+    left:90px;
+    top:150px;
+
+}
+
