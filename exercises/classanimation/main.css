@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    background-color:lightgray;
+    width:200px;
+    height:200px;
+    /* animation-name:test;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count:1;
+    animation-timing-function:linear;
+    animation-direction: alternate;
+    animation-fill-mode:both; */
+
+    animation: test 4s 2s infinite linear alternate both;
+
+    /* in the animation shorthand property, the first time value corresponds with animation duration, and the second time value corresponds with the delay */
+}
+
+@keyframes test {
+    0% {
+        background-color:red;
+        height:200px;
+    }
+    100% {
+        background-color:yellow;
+        height:400px;
+    }
+}
+
+body {
+    margin:0;
+}
+
+.container {
+    background-color:lightpink;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    position:relative;
+
+    overflow:hidden;
+    /* keeps the scroll bar hidden when objects go off the page */
+    /* when it was at 50vh */
+
+    animation: blink 4s infinite alternate;
+}
+
+@keyframes blink {
+    0%{
+        scale:1 1; /* first value is x and second is y */
+        /* height:100vh; */
+    }
+    100%{
+        scale:1 0; /* only changing the y scale, scale uses center as the origin point which is why it's squashing towards the center */
+        /* height:0; */
+    }
+}
+
+
+.circle {
+    background-color:lightgray;
+    width:100px;
+    height:100px;
+    border-radius:100%;
+    animation: pulse 4s infinite alternate; 
+}
+
+@keyframes pulse {
+    0% {
+        background-color:lightgray;
+        scale:1;
+    }
+    100%{
+        background-color:lightyellow;
+        scale:1.4;
+    }
+
+
+}
+
+.square {
+    background-color:lightgray;
+    width:50px;
+    height:50px;
+    animation: spin 4s infinite linear;
+}
+
+@keyframes spin { 
+    0%{
+        rotate:0;
+        scale:1;   
+
+    }
+
+    50%{
+        transform:rotate(180deg) scale(2);
+    }
+
+    100%{
+        transform:rotate(360deg) scale(1);
+    }
+}
+
+.mover { 
+    background-color:lightgray;
+    width:150px;
+    height:50px;
+    /* in order for an absolute positioned element to position self relative to its container, the container also needs to be given a position other than static */
+    position:absolute;
+    bottom:0;
+    left:0;
+    animation: move 4s infinite; 
+}
+
+@keyframes move {
+    0% {
+    /*translate: 0 0;*/        
+    left:-150px;
+
+    }
+
+    100% {
+    /* translate: 100vw 0;*/        
+    left:100%; 
+    /* left:calc(100%-150px); */
+    /* rotate:900deg; */
+    }
+}
+
+.changer {
+    background-color:lightgray;
+    width:100px;
+    height:100px;
+    transition: background-color 2s,    
+                border-radius 2s, 
+                rotate 2s;
+    /* transition affects the property upon hover */
+    /* you want to put the transition state on the most stable or base state, not the changer element */
+}
+
+.changer:hover {
+    background:lightsalmon;
+    border-radius: 100%;
+    rotate:45deg;
+}

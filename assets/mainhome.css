@@ -1,24 +1,107 @@
 body{
-    background-color:antiquewhite;
+    background-color:rgb(254, 188, 102);
+    cursor: url('./images/Paw.png'), auto;
 }
 
-p{
-    background-color:beige;
+
+/* links */
+
+a {
+    outline:transparent;
+}
+
+a:link {
+    color:rgb(255, 16, 16);
+}
+
+a:visited {
+        color: #69128e;
+
+}
+
+a:hover {
+    color: #ff7700;
+}
+
+a:active {
+        color: #ff005d;
+
+}                       
+
+h3{
+    font-family: IAmTheCrayonMaster;
+    color:rgb(231, 127, 0);
+}
+
+.heading{
+    font-size:130px;
+    position:fixed;
+    top:100px;
+    text-align:center;
+    transition: right .3s
+                top .3s
+                font-size .3s
+                text-align .3s;
+}
+
+.activeTwo {
+    right: 50px;
+    top: 625px;
+    font-size:45px;
+    text-align:right;
+}
+
+
+
+button {
+  font-family: IAmTheCrayonMaster;
+  background-color: #ff7700;
+  width: 150px;
+  font-size: 20px;
+  padding: 8px;
+  border-radius:50%;
+  border: 2px solid rgb(255, 16, 16);
+  color:rgb(254, 188, 102);
+  cursor:pointer;  
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+button:hover{
+    color: #ff005d;
+}
+button:active{
+        color: #69128e;
+}
+
+
+.menu{
+  font-size: 150%;
+  font-family:IAmTheCrayonMaster;
+  position: fixed;
+  z-index: -1;
+  height:500px;
+  width:100vw;
+  bottom:-500px;
+  text-align:left;
+
+  opacity:0;
+  transition: opacity .3s, 
+              bottom .3s, 
+              top .3s,
+              background-color .3s;
+              
+
+}
+
+.active {
+    bottom:0;
+    top:120px;
+    opacity:1;
 }
 
 ul{
-    border: 10px dashed rgb(102, 133, 131);
-    background-color:rgb(166, 197, 196);
-    color:blanchedalmond;
-    align-content: center;
-    padding-top: 20px;
-}
-
-.container{
-    position: relative;
-}
-
-.image2{
-    position:absolute;
-    left:-100px;
+    font-size:17px;
+    margin:7px;
 }

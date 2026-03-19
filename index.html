@@ -1,4 +1,4 @@
-!<doctype html> 
+<!doctype html> 
 <html>
     <head>
         <title>Kristen's World</title>
@@ -8,28 +8,62 @@
     </head>
 
     <body>
-        <p>Hello World</p> 
     
-        <h3>Homepage<h1>
+        <div class="heading">
+            <h3>Welcome to Kristen World!!!!!<h3>
+        </div>
 
-        <h1>List of links</h1>
+       <div class="myButton">
+        <button onclick="change()">
+                Click Me...
+        </button>
+    </div>
 
-        <ul>
-            <li><a href="first-website/index.html">First Website</a></li>
-            <li><a href="passion/">Passion Page</a></li>
-            <li><a href="about.html/">About Page</a><li>
-            <li><a href="box-model-position/">Box Model Position Smiley Face Page </a></li>
 
-         </ul>
+        <div class="menu">  
+            <ul>journals + exercises</ul> 
 
-       <div class="container">
+            <ul> <a href="journals/index.html">journals</a></ul>
 
-        <img src="assets/imagecollection/filmpics/HORIZONTAL/coloradolake.png">
-        
+             <ul> <a href="exercises/animation/index.html">animation</a></ul>
 
-       </div>
+             <ul> <a href="exercises/boilerplate/index.html">boilerrrplate</a></ul>
 
-      
+             <ul> <a href="exercises/box-model-position/index.html">my box-model-position face</a></ul>
+
+             <ul> <a href="exercises/classanimation/index.html">animation-class</a></ul>
+
+             <ul> <a href="exercises/first-website/index.html">first website!!</a></ul>
+
+             <ul> <a href="exercises/flexbox example exercise/index.html">flexbox example</a></ul>
+
+             <ul> <a href="exercises/flexbox/index.html">flexbox</a></ul>
+
+             <ul> <a href="exercises/javascript/index.html">javaascript</a></ul>
+
+             <ul> <a href="exercises/passion/index.html">passion-one</a></ul>
+
+             <ul> <a href="exercises/passion2/index.html">passion-two</a></ul>
+
+             <ul> <a href="exercises/structure/index.html">structure-1one</a></ul>
+
+             <ul> <a href="exercises/structure-two/index.html">structure-1one.5</a></ul>
+
+        </div>
+    
+
+       <script>
+        var menu = document.querySelector(".menu");
+        var heading = document.querySelector(".heading");
+
+        function change() {
+            console.log('it works!');
+            menu.classList.toggle("active");
+            heading.classList.toggle("activeTwo");
+        }
+
+
+        </script>
 
     </body>
 

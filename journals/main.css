@@ -1,0 +1,70 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family:IAmTheCrayonMaster;
+    background-color: rgb(174, 215, 251);
+    color:rgb(86, 48, 48);
+}
+
+h3{
+    color:rgb(231, 127, 0);
+    font-size:40px;
+    margin:30px;
+    padding:5px;
+}
+
+.container{
+    display:inline-grid;
+    grid-template-columns: auto auto auto;
+}
+
+h1{
+    font-size:20px;
+    color:rgb(231, 127, 0);
+    margin:1px;
+    padding:0;
+}
+
+.homepage{
+    position:fixed;
+    top:0;
+    right:10px;
+    margin:15px;
+}
+
+.inline{
+    background-color:rgb(255, 240, 206);
+    width:375px;
+    height:475px;
+    margin:35px;
+    padding:10px;
+    display:inline-block;
+}
+
+p{
+    margin:3;
+    padding:0;
+}
+
+
+/* link style */
+a{
+    outline:transparent;
+}
+a:link{
+    color:rgb(86, 48, 48);
+}
+a:visited {
+        color: #ac4ed5;
+
+}
+a:hover {
+    color:rgb(231, 127, 0);
+}
+
+a:active {
+        color: #ff005d;
+
+}                       
