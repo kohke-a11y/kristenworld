@@ -6,6 +6,10 @@ body{
     background-color: rgb(255, 255, 255);
 }
 
+p{
+    font-size:60px;
+    color:red;
+}
 .container{
     display:flex;
     align-items:center;
