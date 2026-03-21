@@ -10,8 +10,8 @@ body{
 
 @font-face {
     font-family: 'IAmTheCrayonMaster';
-    src: url('/assets/fonts/transfonter.org-20260321-012315/IAmTheCrayonMaster.woff2') format('woff2'),
-        url('/assets/fonts/transfonter.org-20260321-012315/IAmTheCrayonMaster.woff') format('woff');
+    src: url('./assets/IAmTheCrayonMaster.woff2') format('woff2'),
+        url('./assets/IAmTheCrayonMaster.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'IAmTheCrayonMaster';
+    src: url('IAmTheCrayonMaster.woff2') format('woff2'),
+        url('IAmTheCrayonMaster.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
