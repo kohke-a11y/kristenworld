@@ -6,12 +6,13 @@ body{
     background-color: rgb(255, 197, 197);
     height:100vh;
     width: 100vw;
+    margin:0;
 }
 
 @font-face {
     font-family: 'IAmTheCrayonMaster';
     src: url('./assets/IAmTheCrayonMaster.woff2') format('woff2'),
-        url('./assets/IAmTheCrayonMaster.woff') format('woff');
+    url('./assets/IAmTheCrayonMaster.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
