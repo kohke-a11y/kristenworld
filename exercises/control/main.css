@@ -1,0 +1,225 @@
+*{
+    box-sizing:border-box;
+}
+
+@font-face {
+    font-family: 'IAmTheCrayonMaster';
+    src: url('./assets/IAmTheCrayonMaster.woff2') format('woff2'),
+    url('./assets/IAmTheCrayonMaster.woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin:0;
+    background-color:rgb(193, 235, 245);
+}
+
+h1{
+    position:fixed;
+    top:0;
+    right:25px;
+    font-family:IAmTheCrayonMaster;
+    color:rgb(158, 79, 55);
+}
+
+.buttons {
+    position:fixed;
+    top:10px;
+    left:10px;
+}
+
+button {
+  font-family: IAmTheCrayonMaster;
+  background-color: rgb(235, 242, 243);
+  width: 85px;
+  font-size: 15px;
+  padding: 10px;
+  border-radius:50%;
+  border: 2px solid rgb(55, 144, 158);
+  color:rgb(158, 79, 55);
+  cursor:pointer;  
+  display: inline;
+  margin-top: 10px;
+}
+
+button:hover{
+    color: #ff005d;
+}
+button:active{
+    color: rgb(110, 247, 86);
+}
+
+
+.antimation{
+    background-color:rgb(46, 14, 14);
+    width:10px;
+    height:6px;    
+    position:fixed;
+    left:-10px;
+    top:134px;  
+    z-index: 5;  
+    animation: walking 100s infinite alternate linear;
+}
+
+.antimationTwo{
+    background-color:rgb(46, 14, 14);
+    width:10px;
+    height:6px;    
+    position:fixed;
+    left:-10px;
+    top:134px;  
+    z-index: 5;  
+    animation: walking 100s 8s infinite alternate linear;
+}
+
+.antimationThree{
+    background-color:rgb(46, 14, 14);
+    width:10px;
+    height:6px;    
+    position:fixed;
+    left:-10px;
+    top:134px;  
+    z-index: 5;  
+    animation: walking 100s 16s infinite alternate linear;
+}
+
+@keyframes walking{
+    0% {
+        left:-10px;
+    }
+
+
+    100%{
+        left:100%;
+    }
+} 
+
+.underground {
+    background-color:rgb(158, 79, 55);
+    position:absolute;
+    width:100vw;
+    height:700px;
+    z-index:-1
+
+}
+.grass {
+    background-color: rgb(154, 194, 147);
+    width:100vw;
+    height:20px;    
+    position:absolute;
+    top:140px;
+
+}
+
+.container {
+    background-color:rgb(192, 115, 91);
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:160px;
+    height:580px;
+    width:550px;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+.dirt {
+    background-color:rgb(158, 79, 55);
+    width:175px;
+    height:50px;
+    display:none;
+}
+.dirtTwo {
+    background-color:rgb(158, 79, 55);
+    width:50px;
+    height:50px;
+    display:none;
+}
+
+.dirt.reveal{
+    display:block;
+}
+
+.dirtTwo.reveal{
+    display:block;
+}
+
+.ant-grid{
+    position:absolute;
+    margin-top:180px;
+    margin-left:10px;
+    display:grid;
+    justify-content: space-evenly;
+    row-gap: 10px;
+    align-items:left;
+
+}
+
+.ant{
+  width:90px;
+  height:60px;;
+  display:none;
+  z-index:3;
+}
+
+.ant.reveal{
+    display:block;
+}
+
+.labels{
+    font-family: IAmTheCrayonMaster;
+    font-size: 15px;
+    background-color: rgb(154, 194, 147);
+    padding:10px;
+    color: rgb(255, 240, 206);
+    position: absolute;    
+    margin-top:15px;
+    margin-left: 10px;
+    display:none;
+    z-index:6;
+}
+
+.labels.reveal{
+    display:block;
+}
+
+.food{
+    position:fixed;
+    display:grid;
+    margin-top:-100px;
+    justify-content: space-evenly;
+    display:none;
+    z-index: 10;
+}
+
+.bread{
+  width:80px;
+  height:110px;
+  z-index:8;
+}
+.chocolate{
+  width:60px;
+  height:40px;
+  z-index:8;
+}
+.apple{
+  width:80px;
+  height:100px;
+  z-index:8;
+}
+.banana{
+  width:90px;
+  height:50px;
+  z-index:8;
+}
+
+.food.reveal{
+    display:block;
+}
+
+.draggable {
+    cursor:grab;
+}
