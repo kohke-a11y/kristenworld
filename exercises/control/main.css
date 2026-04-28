@@ -162,7 +162,7 @@ button:active{
   width:90px;
   height:60px;;
   display:none;
-  z-index:3;
+  z-index:11;
 }
 
 .ant.reveal{
@@ -189,32 +189,45 @@ button:active{
 .food{
     position:fixed;
     display:grid;
-    margin-top:-100px;
+    margin-top:-110px;
     justify-content: space-evenly;
     display:none;
     z-index: 10;
 }
 
 .bread{
-  width:80px;
-  height:110px;
+  width:100px;
+  height:130px;
   z-index:8;
 }
 .chocolate{
-  width:60px;
-  height:40px;
-  z-index:8;
-}
-.apple{
   width:80px;
-  height:100px;
-  z-index:8;
-}
-.banana{
-  width:90px;
   height:50px;
   z-index:8;
 }
+.apple{
+  width:100px;
+  height:120px;
+  z-index:8;
+}
+.banana{
+  width:150px;
+  height:80px;
+  z-index:8;
+}
+
+.juice{
+  width:110px;
+  height:100px;
+  z-index:8;
+}
+
+.peach{
+  width:100px;
+  height:90px;
+  z-index:8;
+}
+
 
 .food.reveal{
     display:block;

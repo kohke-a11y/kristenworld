@@ -1,0 +1,121 @@
+*{
+    box-sizing:border-box;
+}
+
+
+@font-face {
+    font-family: 'IAmTheCrayonMaster';
+    src: url('./assets/IAmTheCrayonMaster.woff2') format('woff2'),
+    url('./assets/IAmTheCrayonMaster.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    background-color: rgb(237, 216, 165);
+    transition: background .5s;
+}
+
+
+.container {
+    font-family:IAmTheCrayonMaster;
+    display:flex;
+    flex-direction:column;
+    gap:10px; 
+    max-width:1100px;
+    margin: 40px auto;
+}
+
+main {
+    display:flex;
+    flex-direction:horizontal;
+    gap:10px;
+}
+
+header, 
+.left, 
+.center, 
+.right, 
+footer {
+    border:1px solid;
+    padding: 20px;
+}
+
+header, 
+footer { 
+    text-align:center;
+}
+
+.center {
+    width:50%;
+}
+
+.left,
+.right {
+    width:25%;
+}
+
+img {
+    max-width:100%
+}
+
+
+/* min-width = mobile first */
+/* for mobile first we want our media queries to increase in pixel size as we move down our css document */
+
+/* max-width = desktop first */
+/* for desktop first, we want our media queries to decrease in pixel size as we move down our css document */
+
+
+
+/* mobile example */
+/* @media screen and (max-width: 800px) {
+    body {
+        background:lightpink;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    body {
+        background:lightgreen;
+    }
+} */
+
+
+/* desktop example */
+@media screen and (max-width: 1000px) {
+    body {
+        background:lightpink;
+    }
+
+    main {
+        flex-wrap:wrap;
+    }
+
+    .left {
+        width:100%;
+    }
+
+    .center, .right {
+        width:calc(50% - 5px);
+    }
+}
+
+@media screen and (max-width:800px) {
+    body {
+        background:lightgreen;
+        font-size:130%;
+    }
+    
+    main {
+        flex-direction: column;
+    }
+
+    /* don't have to reset .left width because it's gonna trickle down to the next, the next smaller size will inherit the previous properties */
+
+    .center, .right {
+        width:100%;
+    }
+    
+}
